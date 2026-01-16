@@ -1,0 +1,29 @@
+apiVersion: career/v1
+kind: JoiningUpdate
+metadata:
+  name: Abrar Ahmed
+  role: Senior Software Engineer - DevOps
+  org: Zscaler
+spec:
+  location: "Bangalore, India 🌏"
+  readinessProbe: "excited_and_ready 🟢"
+  containers:
+    - name: career
+      image: "abrar/zero-trust:latest"
+      securityContext:
+        runAsNonRoot: false   # root access required 😈
+      env:
+        - name: MINDSET
+          value: "keep_scaling 🚀"
+        - name: ENERGY
+          value: "overclocked ⚡"
+        - name: MISSION
+          value: "Build, Break, Automate, Repeat ♾️"
+        - name: SKILLS
+          value: "terraform, ansible, kubernetes, cicd, aws, gcp"
+      readinessProbe:
+        exec:
+          command: ["echo", "Ready to build Zero Trust 🚀"]
+
+  status: "Running"
+  message: "Zscaler mission initiated... 🚀"
